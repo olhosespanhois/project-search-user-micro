@@ -1,0 +1,25 @@
+header{
+    background-color: #0093d9;
+    color: #fff;
+    h1{
+        color: #fff;
+        font-weight: 700;
+    }
+    a, a:link, a:visited{
+        color: #fff;
+        cursor: pointer;
+    }
+    .btn-custom{
+        color: #fff;
+        border: #fff 1px solid;
+        background-color: transparent;
+        &:hover,
+        &:focus{
+            color: #0093d9;
+            border: #fff;
+            background-color: #fff !important;
+            box-shadow: none;
+            background-color: transparent;
+        }
+    }
+}
