@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, Title } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IndexAppComponent } from 'projects/station/index/src/app/app.component';
@@ -17,6 +19,9 @@ import { CoreModule } from './core/core.module';
   imports: [
 	NgbModule,
 	BrowserModule,
+	FormsModule,
+	ReactiveFormsModule,
+	HttpClientModule,
 	AppRoutingModule,
 	RouterModule,
 	CoreModule,
