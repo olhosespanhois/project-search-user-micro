@@ -1,4 +1,4 @@
-# Project User Search
+# Project User Search Micro Frontend
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.5.
 
