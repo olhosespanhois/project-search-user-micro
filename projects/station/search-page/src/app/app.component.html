@@ -1,7 +1,6 @@
 <section id="main" class="container">
 	<div class="row">
-    teste app-search-movie
-		<!-- <app-search-movie (resultValue)="receiveResultValue($event)"></app-search-movie>
-		<app-list-movie [movie]="movie" *ngIf="movie"></app-list-movie> -->
+		<lib-search-input (resultValue)="receiveResultValue($event)"></lib-search-input>
+		<lib-search-list [user]="user"></lib-search-list>
 	</div>
 </section>

@@ -1,1 +1,28 @@
-<p>search-list works!</p>
+<section id="list-user" class="container" *ngIf="userList;else listTemplate">
+	<div class="row">
+		<div class="col-12 mb-5">
+			<div class="list-group">
+				<a *ngFor="let list of userList" class="list-group-item list-group-item-action" (click)="seeMore(list.id)">
+				  <div class="row">
+					<div class="col-12 col-sm-3">{{list.name}}</div>
+					<div class="col-12 col-sm-3">{{list.email}}</div>
+					<div class="col-12 col-sm-3">{{list.address.city}}</div>
+					<div class="col-12 col-sm-3">{{list.company.name}}</div>
+				  </div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<ng-template #listTemplate>
+	<section id="list-user" class="container">
+		<div class="row">
+			<div class="col-12">
+				<p class="pb-1">Desculpe, mas não encontramos informações sobre o usuário que você está procurando.</p>
+				<p class="pb-1">Pode ser que o nome de usuário tenha sido digitado incorretamente ou que a pessoa ainda não tenha criado um perfil em nossa plataforma.</p>
+				<p class="pb-1">Certifique-se de que o nome de usuário está escrito corretamente e tente novamente. Se você estiver usando um nome de usuário parcial, verifique se a informação inserida está correta e completa.</p>
+			</div>
+		</div>
+	</section>
+
+</ng-template>

@@ -1,0 +1,24 @@
+.modal{
+		display: flex;
+		color: #000;
+		--bs-modal-width: 700px;
+
+		.modal-header{
+				background-color: #E61E29;
+				h5{
+					color: #fff !important;
+				}
+		}
+		.icon-user{
+			background: #0093d9;
+			color: #fff;
+			display: flex;
+			font-size: 2rem;
+			border-radius: 50%;
+			padding: 8px 10px;
+			justify-content: center;
+			margin: 0px auto 5px;
+			width: max-content;
+
+		}
+}

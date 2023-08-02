@@ -10,5 +10,18 @@ body{
         text-transform: uppercase;
         color: #0093d9;
     }
+    a{
+        color: #0093d9;
+        cursor: pointer;
+        &:link,
+        &:visited{
+            color: #0093d9; 
+        }
+        &:active,
+        &:focus,
+        &:hover{
+            color: #E61E29; 
+        }
+    }
 }
 

@@ -11,12 +11,12 @@ export class ServicesService {
   constructor(private http: HttpClient) { }
 
   getUserList() {
-    return this.http.get(`${this.apiUrl}/users`);
+    return this.http.get(`${this.apiUrl}users`);
   }
   getUserSearch(name: string) {
-    return this.http.get(`${this.apiUrl}/users?name=${name}`);
+    return this.http.get(`${this.apiUrl}users?name=${name}`);
   }
   getUserDetails(Id: string) {
-    return this.http.get(`${this.apiUrl}/users/${Id}`);
+    return this.http.get(`${this.apiUrl}users/${Id}`);
   }
 }
