@@ -1,0 +1,26 @@
+<header class="">
+	<section class="container">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<h1><a class="navbar-brand" href="#">Project User Search</a></h1>
+						<button class="navbar-toggler btn-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegação" (click)="toggleNavbar()">
+							<i class="fa-solid fa-bars"></i>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbar" (ngClass)="{ 'show': navbarOpen }">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" [routerLink]="['/busca']" routerLinkActive="router-link-active" >Busca</a>
+								</li>
+							  </ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</section>
+</header>
