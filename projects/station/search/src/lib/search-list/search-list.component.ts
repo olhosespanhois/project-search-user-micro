@@ -18,7 +18,7 @@ export class SearchListComponent implements OnChanges {
 	constructor(private modalService: NgbModal) {}
 
 	ngOnInit(): void {
-
+		
 	}
 
 	ngOnChanges(changes: SimpleChanges): void {
