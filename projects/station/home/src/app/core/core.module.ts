@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import { FooterComponent } from "./footer/footer.component";
@@ -7,13 +7,13 @@ import { HeaderComponent } from "./header/header.component";
 @NgModule({
     declarations: 
     [
-        HeaderComponent,
+        //HeaderComponent,
         FooterComponent
     ],
     providers: [],
     bootstrap: [],
     imports: [
-        // HeaderComponent,
+        HeaderComponent,
         // FooterComponent,
         RouterModule,
         AppRoutingModule
@@ -22,5 +22,8 @@ import { HeaderComponent } from "./header/header.component";
         HeaderComponent,
         FooterComponent
     ],
+    schemas: [
+		CUSTOM_ELEMENTS_SCHEMA
+	],
 })
 export class CoreModule { }

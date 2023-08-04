@@ -1,9 +1,14 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { SearchPageAppComponent } from './app.component';
 
 describe('SearchPageAppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [SearchPageAppComponent]
+    imports: [
+      SearchPageAppComponent,
+      HttpClientTestingModule
+    ],
+    // declarations: [SearchPageAppComponent],
   }));
 
   it('should create the app', () => {
@@ -12,10 +17,10 @@ describe('SearchPageAppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title '@station/search-page'`, () => {
+  it(`should have as title 'Project Search Micro Frontend'`, () => {
     const fixture = TestBed.createComponent(SearchPageAppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('@station/search-page');
+    expect(app.title).toEqual('Project Search Micro Frontend');
   });
 
   it('should render title', () => {
