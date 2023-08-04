@@ -8,7 +8,6 @@ describe('SearchPageAppComponent', () => {
       SearchPageAppComponent,
       HttpClientTestingModule
     ],
-    // declarations: [SearchPageAppComponent],
   }));
 
   it('should create the app', () => {
