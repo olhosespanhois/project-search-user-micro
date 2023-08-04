@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
@@ -12,26 +12,31 @@ import { SearchModule } from 'projects/station/search/src/public-api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { ServicesService } from './core/service/services.service';
 
 @NgModule({
-  declarations: [
-	AppComponent
-  ],
-  imports: [
-	NgbModule,
-	CommonModule,
-	BrowserModule,
-	FormsModule,
-	ReactiveFormsModule,
-	HttpClientModule,
-	AppRoutingModule,
-	RouterModule,
-	CoreModule,
-	SearchModule,
-	SearchPageAppComponent,
-	IndexAppComponent
-  ],
-  providers: [Title],
-  bootstrap: [AppComponent]
+	declarations: [AppComponent],
+	imports: [
+		NgbModule,
+		CommonModule,
+		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpClientModule,
+		AppRoutingModule,
+		RouterModule,
+		SearchModule,
+		CoreModule,
+		SearchPageAppComponent,
+		IndexAppComponent
+	],
+	providers: [
+		ServicesService,
+		Title
+	],
+	bootstrap: [AppComponent],
+	schemas: [
+		CUSTOM_ELEMENTS_SCHEMA
+	],
 })
 export class AppModule { }
