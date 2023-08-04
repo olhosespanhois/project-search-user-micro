@@ -10,9 +10,10 @@ Package Manager: npm 9.5.1
 
 ## Servidor de desenvolvimento
 
-Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+Execute `ng serve @station/home` para um servidor de desenvolvimento principal deste projeto. 
 
-Execute `ng serve @station/home` para um servidor de desenvolvimento principal deste projeto.
+Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+
 
 ## Andaime de código
 
