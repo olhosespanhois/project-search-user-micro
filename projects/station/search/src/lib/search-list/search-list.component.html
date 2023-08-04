@@ -1,4 +1,4 @@
-<section id="list-user" class="container" *ngIf="userList;else listTemplate">
+<section id="list-user" class="container" *ngIf="userList && userList.length > 0;else listTemplate">
 	<div class="row">
 		<div class="col-12 mb-5">
 			<div class="list-group">

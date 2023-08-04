@@ -1,12 +1,19 @@
 # Project User Search Micro Frontend
 
-Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.5.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.6.
+
+## Pré-requisitos
+
+Angular CLI: 16.1.6
+Node: 18.16.0
+Package Manager: npm 9.5.1
 
 ## Servidor de desenvolvimento
 
-Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+Execute `ng serve @station/home` para um servidor de desenvolvimento principal deste projeto. 
 
-Execute `ng serve @station/home` para um servidor de desenvolvimento principal deste projeto.
+Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+
 
 ## Andaime de código
 

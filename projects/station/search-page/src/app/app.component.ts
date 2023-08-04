@@ -10,7 +10,7 @@ import { SearchModule } from 'projects/station/search/src/lib/search.module';
 	styleUrls: ['./app.component.scss']
 })
 export class SearchPageAppComponent {
-	title:any = 'Project Search Micro Frontend - Busca';
+	title:any = 'Project Search Micro Frontend';
 
 	constructor(private titleService:Title) { }
 	user: any;
